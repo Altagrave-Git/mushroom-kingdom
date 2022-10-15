@@ -1,0 +1,143 @@
+@font-face {
+  font-family: "mario";
+  src: url("mario.ttf") format("truetype");
+}
+
+header {
+  font-family: "mario";
+  font-size: 3rem;
+  text-align: center;
+  text-shadow: 0 0 0.75rem rgba(0, 0, 0, 0.75);
+  background-image: url(images/pipe.png);
+  background-size: 100% 100%;
+  height: 3em;
+}
+
+#mushroom {
+  transform: rotate3d(1, 0, 0, 30deg);
+  transform: translateY(1.6rem);
+  margin: 0;
+}
+
+#kingdom {
+  transform: rotate3d(1, 0, 0, 30deg);
+  transform: translateY(1.6rem);
+  margin: 0;
+}
+
+#mushroom-1 {
+ color: red;
+}
+
+#mushroom-2 {
+  color: yellow;
+}
+
+#mushroom-3 {
+  color: rgb(82, 255, 47);
+}
+
+#mushroom-4 {
+  color: darkviolet;
+}
+
+#mushroom-5 {
+  color: orange;
+}
+
+#mushroom-6 {
+  color: yellow;
+}
+
+#mushroom-7 {
+  color: red;
+}
+
+#mushroom-8 {
+  color: rgb(82, 255, 47);
+}
+
+#kingdom-1 {
+  color: red;
+}
+
+#kingdom-2 {
+  color: yellow;
+}
+
+#kingdom-3 {
+  color: darkviolet;
+}
+
+#kingdom-4 {
+  color: orange;
+}
+
+#kingdom-5 {
+  color: rgb(82, 255, 47);
+}
+
+#kingdom-6 {
+  color: darkviolet;
+}
+
+#kingdom-7 {
+  color: yellow;
+}
+
+body {
+  background-color: rgb(50, 46, 82);
+}
+
+main {
+  margin-top: 1vw;
+}
+
+.card {
+  position: relative;
+  display: inline-block;
+  height: 22vw;
+  width: 15vw;
+  margin: 3vw 4.6vw;
+}
+
+/* card container */
+.card > div {
+  position: absolute;
+  display: block;
+  height: 22vw;
+  width: 15vw;
+}
+
+/* card flip */
+.card > div:nth-child(1) {
+  background-image: url(images/mario.jpg);
+  background-size: cover;
+  filter: opacity(100);
+  opacity: 1;
+  z-index: 2;
+  transition: opacity 0s 0.25s, filter 0s 0.25s, z-index 0s 0.25s, transform 0.5s linear;
+}
+
+.card > div:nth-child(2) {
+  background-image: url(images/bowser.jpg);
+  background-size: cover;
+  filter: opacity(0);
+  opacity: 0;
+  z-index: 1;
+  transition: opacity 0s 0.25s, filter 0s 0.25s, z-index 0s 0.25s, transform 0.5s linear;
+}
+
+.card:hover > div:nth-child(1) {
+  filter: opacity(0);
+  opacity: 0;
+  z-index: 1;
+  transform: rotate3d(0, 1, 0, 180deg);
+}
+
+.card:hover>div:nth-child(2) {
+  filter: opacity(100);
+  opacity: 1;
+  z-index: 2;
+  transform: rotate3d(0, 1, 0, 180deg);
+}
