@@ -3,6 +3,13 @@
   src: url("mario.ttf") format("truetype");
 }
 
+body {
+  background-color: black;
+  background-image: url(images/bg.png);
+  background-size: cover;
+  background-position: center;
+}
+
 header {
   font-family: "mario";
   font-size: 3rem;
@@ -85,23 +92,20 @@ header {
   color: yellow;
 }
 
-body {
-  background-color: rgb(50, 46, 82);
+main {
+  margin: 1vw 6.5vw auto;
 }
 
-main {
-  margin-top: 1vw;
-}
+/*  ==============================  card container  ==========================  */
 
 .card {
   position: relative;
   display: inline-block;
   height: 22vw;
   width: 15vw;
-  margin: 3vw 4.6vw;
+  margin: 3vw;
 }
 
-/* card container */
 .card > div {
   position: absolute;
   display: block;
@@ -109,10 +113,9 @@ main {
   width: 15vw;
 }
 
-/* card flip */
+/*  ==============================  card flip  ==============================  */
+
 .card > div:nth-child(1) {
-  background-image: url(images/mario.jpg);
-  background-size: cover;
   filter: opacity(100);
   opacity: 1;
   z-index: 2;
@@ -120,8 +123,6 @@ main {
 }
 
 .card > div:nth-child(2) {
-  background-image: url(images/bowser.jpg);
-  background-size: cover;
   filter: opacity(0);
   opacity: 0;
   z-index: 1;
@@ -140,4 +141,76 @@ main {
   opacity: 1;
   z-index: 2;
   transform: rotate3d(0, 1, 0, 180deg);
+}
+
+/*  ==============================  CARD IMAGE  ==============================  */
+
+.card img:nth-child(1) {
+  height: inherit;
+  width: inherit;
+  box-sizing: border-box;
+  border: 0.4vw solid;
+  border-top-left-radius: 15% 10%;
+  border-top-right-radius: 15% 10%;
+  border-bottom-right-radius: 15% 10%;
+  border-bottom-left-radius: 15% 10%;
+}
+
+.card img:nth-child(2) {
+  height: inherit;
+  width: inherit;
+  box-sizing: border-box;
+  border: 0.4vw solid;
+  border-top-left-radius: 15% 10%;
+  border-top-right-radius: 15% 10%;
+  border-bottom-right-radius: 15% 10%;
+  border-bottom-left-radius: 15% 10%;
+}
+
+#mario img {
+  border-color: #ff2a02;
+}
+
+#luigi img {
+  border-color: #1a9410;
+}
+
+#peach img {
+  border-color: #ff9eca;
+}
+
+#yoshi img {
+  border-color: #34b413;
+}
+
+#daisy img {
+  border-color: #fedc31;
+}
+
+#rosalina img {
+  border-color: #78d5e8;
+}
+
+#toad img {
+  border-color: #ffe4bd;
+}
+
+#toadette img {
+  border-color: #ff029a;
+}
+
+#wario img {
+  border-color: #fde71b;
+}
+
+#waluigi img {
+  border-color: #4a1c45;
+}
+
+#bowser img {
+  border-color: #000000;
+}
+
+#bowserjr img {
+  border-color: #ffac03;
 }
