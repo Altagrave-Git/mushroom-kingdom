@@ -118,28 +118,24 @@ main {
 .card > div:nth-child(1) {
   filter: opacity(100);
   opacity: 1;
-  z-index: 2;
   transition: opacity 0s 0.25s, filter 0s 0.25s, z-index 0s 0.25s, transform 0.5s linear;
 }
 
 .card > div:nth-child(2) {
   filter: opacity(0);
   opacity: 0;
-  z-index: 1;
   transition: opacity 0s 0.25s, filter 0s 0.25s, z-index 0s 0.25s, transform 0.5s linear;
 }
 
 .card:hover > div:nth-child(1) {
   filter: opacity(0);
   opacity: 0;
-  z-index: 1;
   transform: rotate3d(0, 1, 0, 180deg);
 }
 
 .card:hover>div:nth-child(2) {
   filter: opacity(100);
   opacity: 1;
-  z-index: 2;
   transform: rotate3d(0, 1, 0, 180deg);
 }
 
@@ -169,48 +165,60 @@ main {
 
 #mario img {
   border-color: #ff2a02;
+  background-color: #ff2a02;
 }
 
 #luigi img {
   border-color: #1a9410;
+  background-color: #1a9410;
 }
 
 #peach img {
   border-color: #ff9eca;
+  background-color: #ff9eca;
 }
 
 #yoshi img {
   border-color: #34b413;
+  background-color: #34b413;
 }
 
 #daisy img {
   border-color: #fedc31;
+  background-color: #fedc31;
 }
 
 #rosalina img {
   border-color: #78d5e8;
+  background-color: #78d5e8;
 }
 
 #toad img {
   border-color: #ffe4bd;
+  background-color: #ffe4bd;
 }
 
 #toadette img {
   border-color: #ff029a;
+  background-color: #ff029a;
 }
 
 #wario img {
   border-color: #fde71b;
+  background-color: #fde71b;
 }
 
 #waluigi img {
   border-color: #4a1c45;
+  background-color: #4a1c45;
 }
 
 #bowser img {
   border-color: #000000;
+  background-color: #000000;
 }
 
 #bowserjr img {
   border-color: #ffac03;
+  background-color: #ffac03;
 }
